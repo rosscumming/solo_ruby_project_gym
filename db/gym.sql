@@ -13,12 +13,11 @@ CREATE TABLE members(
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
-  gender VARCHAR(6),
-  dob VARCHAR(10) NOT NULL,
+  gender VARCHAR(255),
+  dob VARCHAR(255) NOT NULL,
   address VARCHAR(255),
   email VARCHAR(255),
-  phone_number INT
-
+  phone_number VARCHAR(255)
 );
 
 

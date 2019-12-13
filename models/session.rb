@@ -2,10 +2,9 @@ require_relative( '../db/sql_runner' )
 
 
 
-class Sessions
+class Session
 
 
-  def initialize (options)
 
     attr_reader :id, :session_name, :session_type
 
@@ -16,6 +15,3 @@ class Sessions
     end
 
   end
-
-
-end
