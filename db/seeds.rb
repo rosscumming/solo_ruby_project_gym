@@ -8,7 +8,7 @@ Member.delete_all()
 member1 = Member.new({
   'first_name' => 'Harold',
   'last_name' => 'Freeman',
-  'gender' => 'male',
+  'gender' => 'Male',
   'dob' => '20/04/1991',
   'address' => '17 Parkview Road, Edinburgh',
   'email' => 'boss_man_harold1@gmail.com',
@@ -18,8 +18,8 @@ member1 = Member.new({
 member1.save()
 
 session1 = Session.new({
-  'session_name' => 'spin',
-  'session_type' => 'velocity'
+  'session_name' => 'Spin',
+  'session_type' => 'Velocity'
   })
 
 booking1 = Booking.new({
