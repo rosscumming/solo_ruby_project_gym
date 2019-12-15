@@ -1,0 +1,9 @@
+<h1> members </h1>
+
+
+<ul>
+    <% for member in @members %>
+    <li><%= member.first_name.capitalize%> <%= member.last_name.capitalize%></li>
+    <% end %>
+    <a href="/">Back to home</a>
+  </ul>

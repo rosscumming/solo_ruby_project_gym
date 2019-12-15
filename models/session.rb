@@ -9,6 +9,8 @@ class Session
       @id = options['id'].to_i if options['id']
       @session_name = options['session_name']
       @session_type = options['session_type']
+      @session_time = options['session_time']
+      @session_date = options['session_date']
     end
 
 
@@ -16,13 +18,15 @@ class Session
       sql = "INSERT INTO sessions
       (
         session_name,
-        session_type
+        session_type,
+        session_time,
+        session_date
         ) VALUES (
-        $1, $2
+        $1, $2, $3, $4
         )
         RETURNING id"
 
-        values = [@session_name, @session_type]
+        values = [@session_name, @session_type, @session_time, @session_date]
         results = SqlRunner.run(sql, values)
         @id = results[0]['id'].to_i
     end
@@ -42,13 +46,15 @@ class Session
     def update()
       sql = "UPDATE sessions session_type
       (
-      session_name,
-      session_type
+        session_name,
+        session_type,
+        session_time,
+        session_date
       ) = (
-          $1, $2
+          $1, $2, $3, $4
       )
-      WHERE id = $3"
-      values = [@session_name, @session_type, @id]
+      WHERE id = $5"
+      values = [@session_name, @session_type, @session_time, @session_date, @id]
       SqlRunner.run(sql, values)
     end
 
