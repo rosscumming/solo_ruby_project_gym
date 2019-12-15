@@ -1,0 +1,29 @@
+<form  action="/members/<%= @member.id %>" method="POST">
+  <label for="first-name">First Name: </label>
+  <input type="text" name="first_name" value="<%=@member.first_name.capitalize%>" id="first-name">
+
+  <label for="last-name">Last Name: </label>
+  <input type="text" name="last_name" value="<%=@member.last_name.capitalize%>" id="last-name">
+
+  <label for="gender">Gender: </label>
+  <input type="text" name="gender" value="<%=@member.gender.capitalize%>" id="gender">
+
+  <label for="dob">Date of birth: </label>
+  <input type="text" name="dob" value="<%=@member.dob%>" id="dob">
+
+  <label for="address">Address: </label>
+  <input type="text" name="address" value="<%=@member.address.capitalize%>" id="address">
+
+  <label for="post-code">Post code: </label>
+  <input type="text" name="post_code" value="<%=@member.post_code.upcase%>" id="post-code">
+
+  <label for="email">Email address: </label>
+  <input type="text" name="email" value="<%=@member.email%>" id="email">
+
+  <label for="phone-number">Gender: </label>
+  <input type="text" name="phone_number" value="<%=@member.phone_number%>" id="phone-number">
+
+  <input type="submit" value="Update">
+</form>
+
+<a href="/members/<%= @member.id %>">Back</a>
