@@ -20,7 +20,6 @@ CREATE TABLE members(
   phone_number VARCHAR(255)
 );
 
-
 CREATE TABLE bookings(
   id SERIAL PRIMARY KEY,
   member_id INT REFERENCES members(id),

@@ -10,8 +10,6 @@ class Booking
 
 
   def initialize (options)
-
-
     @id = options['id'].to_i if options['id']
     @member_id = options['member_id'].to_i
     @session_id = options['session_type'].to_i
