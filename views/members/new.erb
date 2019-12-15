@@ -1,5 +1,3 @@
-
-<h2> Add a new member </h2>
 <form  action="/members/" method="POST">
   <label for="first-name">First Name: </label>
   <input type="text" name="first_name" id="first-name">
@@ -22,19 +20,8 @@
   <label for="email">Email address: </label>
   <input type="text" name="email" id="email">
 
-  <label for="phone-number">Phone number: </label>
+  <label for="phone-number">Gender: </label>
   <input type="text" name="phone_number" id="phone-number">
 
   <input type="submit" value="Submit">
 </form>
-
-<h2> Current Members </h2>
-<ul>
-  <% for member in @members %>
-  <li><a href="/members/<%=member.id%>">
-  <%= member.first_name.capitalize%>
-  <%= member.last_name.capitalize%>
-  </a></li>
-  <% end %>
-  <a href="/">Back to home</a>
-</ul>

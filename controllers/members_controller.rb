@@ -15,6 +15,12 @@ get '/members/:id' do
   erb(:"members/show")
 end
 
+# new
+get '/members/new' do
+  @members = Member.all()
+  erb(:members)
+end
+
 #edit
 get '/members/:id/edit' do
   @members = Member.all()
@@ -24,6 +30,13 @@ end
 
 #update
 post '/members/:id' do
- Member.new(params).update()
+  Member.new(params).update()
   redirect to '/members'
+end
+
+#create
+post '/members/?' do
+  @member = Member.new(params)
+  @member.save()
+  erb(:"members/create")
 end
