@@ -18,14 +18,20 @@
 <h2> Current sessions </h2>
 <ul>
   <% for session in @sessions %>
-  <li><a href="/sessions/<%=session.id%>">
-
+  <li>
+  <div class="button-wrap">
   <%= session.session_name.capitalize%>
+  <br>
   <%= session.session_type.capitalize%>
+  <br>
   <%= session.session_time %>
+  <br>
   <%= session.session_date %>
-
-  </a></li>
+  <br>
+  </div>
+  <button class="details-btn"><a href="/sessions/<%=session.id%>">DETAILS</button>
+    <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button>
+  </li>
   <% end %>
   <button class="home-btn"><a href="/">HOME</a></button>
 </ul>
