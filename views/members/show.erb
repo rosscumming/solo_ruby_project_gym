@@ -1,13 +1,13 @@
 <h2> Member Details </h2>
 
-  <p>First name: <%= @member.first_name.capitalize %></p>
-  <p>Last name: <%= @member.last_name.capitalize %></p>
-  <p>Gender: <%= @member.gender.capitalize %></p>
-  <p>Date of birth: <%= @member.dob %></p>
-  <p>Address: <%= @member.address.upcase %></p>
-  <p>Post code: <%= @member.post_code.upcase%></p>
-  <p>Email address: <%= @member.email %></p>
-  <p>Phone number: <%= @member.phone_number %></p>
-  
-<p><a href="/members/<%= @member.id %>/edit">Edit</a></p>
-<a href="/members">Back</a>
+<p>First name: <%= @member.first_name.capitalize %></p>
+<p>Last name: <%= @member.last_name.capitalize %></p>
+<p>Gender: <%= @member.gender.capitalize %></p>
+<p>Date of birth: <%= @member.dob %></p>
+<p>Address: <%= @member.address.upcase %></p>
+<p>Post code: <%= @member.post_code.upcase%></p>
+<p>Email address: <%= @member.email %></p>
+<p>Phone number: <%= @member.phone_number %></p>
+
+<button class="edit-btn"><a href="/members/<%= @member.id %>/edit">EDIT</a></button>
+<button class="back-btn"><a href="/members">BACK</a></button>

@@ -31,10 +31,14 @@
 <h2> Current Members </h2>
 <ul>
   <% for member in @members %>
-  <li><a href="/members/<%=member.id%>">
+  <li>
   <%= member.first_name.capitalize%>
   <%= member.last_name.capitalize%>
-  </a></li>
+  <button class="details-btn"><a href="/members/<%=member.id%>">DETAILS</button>
+  <button class="edit-btn"><a href="/members/<%= member.id %>/edit">EDIT</a></button>
+
+
+</li>
   <% end %>
-  <a href="/">Back to home</a>
+  <button class="home-btn"><a href="/">HOME</a></button>
 </ul>

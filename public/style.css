@@ -8,11 +8,16 @@
 body {
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  background: white;
-  color: #000;
-
+  color: black;
+  overflow: hidden;
 }
 
+.bg {
+  background-image: url("images/background.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 
 .content-container {
 
@@ -49,7 +54,7 @@ a {
 }
 
 .nav-link li{
-display: flex;
+  display: flex;
 }
 
 .nav-link a{
@@ -68,4 +73,74 @@ display: flex;
 .nav-container{
   width: 100vw;
   background: #00171F;
+}
+
+.details-btn {
+  border: none;
+  background: #5842f4;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.details-btn a{
+
+  color: white;
+
+}
+
+.home-btn {
+  border: none;
+  background: #f45842;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.home-btn a{
+
+  color: white;
+}
+
+
+.edit-btn  {
+  border: none;
+  background: #4285f4;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.edit-btn a{
+
+  color: white;
+
+}
+
+.back-btn {
+  border: none;
+  background: #4285f4;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.back-btn a{
+  color: white;
 }
