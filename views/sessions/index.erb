@@ -7,8 +7,9 @@
   <br>
   <input class="submit-btn" type="submit" value="SUBMIT">
 </form>
-
+<div class="ses-wrap">
 <h2> Current sessions </h2>
+</div>
 <ul>
   <% for session in @sessions %>
   <li>
@@ -22,6 +23,7 @@
   <%= session.session_date %>
   <br>
   </div>
+
   <button class="details-btn"><a href="/sessions/<%=session.id%>">DETAILS</button>
     <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button>
   </li>

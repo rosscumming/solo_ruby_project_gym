@@ -34,6 +34,7 @@ input[type=text] {
   width: 980px;
   height: 100vh;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 ul{
@@ -141,7 +142,6 @@ a:visited{
 
 
 
-
 .home-btn a{
 
   color: white;
@@ -220,6 +220,15 @@ a:visited{
 
 }
 
+.ses-wrap {
+  padding-top: 20px;
+}
+
 .ind-btn a {
   text-decoration: none;
+}
+
+
+.cm-main {
+  padding-top: 20px;
 }
