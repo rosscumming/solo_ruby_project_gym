@@ -1,0 +1,17 @@
+<form  action="/sessions/<%= @session.id %>" method="POST">
+  <label for="session-name">Session name: </label>
+  <input type="text" name="session_name" value="<%=@session.session_name.capitalize%>" id="session-name">
+
+  <label for="session-type">Session type: </label>
+  <input type="text" name="session_type" value="<%=@session.session_type.capitalize%>" id="session-type">
+
+  <label for="session-time">Session time: </label>
+  <input type="text" name="session_time" value="<%=@session.session_time%>" id="session-time">
+
+  <label for="session-date">Session date: </label>
+  <input type="text" name="session_date" value="<%=@session.session_date%>" id="session-date">
+
+  <input type="submit" value="Update">
+</form>
+
+<button class="back-btn"><a href="/sessions/<%= @session.id %>">BACK</a></button>

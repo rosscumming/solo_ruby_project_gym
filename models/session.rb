@@ -1,5 +1,7 @@
 require_relative( '../db/sql_runner' )
 
+require('pry')
+
 class Session
 
     attr_accessor  :session_name, :session_type, :session_time, :session_date
@@ -44,7 +46,7 @@ class Session
     end
 
     def update()
-      sql = "UPDATE sessions session_type
+      sql = "UPDATE sessions SET
       (
         session_name,
         session_type,
@@ -56,6 +58,8 @@ class Session
       WHERE id = $5"
       values = [@session_name, @session_type, @session_time, @session_date, @id]
       SqlRunner.run(sql, values)
+      # binding.pry
+      # nil
     end
 
     def delete()

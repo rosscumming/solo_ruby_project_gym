@@ -1,0 +1,9 @@
+<h2> Session Details </h2>
+
+<p>Name: <%= @session.session_name.capitalize %></p>
+<p>Type: <%= @session.session_type.capitalize %></p>
+<p>Time: <%= @session.session_time %></p>
+<p>Date: <%= @session.session_date %></p>
+
+<button class="edit-btn"><a href="/sessions/<%= @session.id %>/edit">EDIT</a></button>
+<button class="back-btn"><a href="/sessions">BACK</a></button>
