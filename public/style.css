@@ -45,8 +45,11 @@ a {
   color: white;
   height:50px;
   line-height: 50px;
+}
 
-
+.button-wrap {
+  width: 17%;
+  display: inline-block;
 }
 
 .nav-link {

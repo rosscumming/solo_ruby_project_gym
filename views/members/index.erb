@@ -1,4 +1,4 @@
-
+<div class="mb-form>">
 <h2> Add a new member </h2>
 <form  action="/members/" method="POST">
   <label for="first-name">First Name: </label>
@@ -27,18 +27,25 @@
 
   <input type="submit" value="Submit">
 </form>
-
+</div>
+<div class="cm-main">
 <h2> Current Members </h2>
 <ul>
+
   <% for member in @members %>
   <li>
-  <%= member.first_name.capitalize%>
-  <%= member.last_name.capitalize%>
-  <button class="details-btn"><a href="/members/<%=member.id%>">DETAILS</button>
-  <button class="edit-btn"><a href="/members/<%= member.id %>/edit">EDIT</a></button>
+    <div class="button-wrap">
+    <%= member.first_name.capitalize%>
+    <%= member.last_name.capitalize%>
+    </div>
+    <button class="details-btn"><a href="/members/<%=member.id%>">DETAILS</button>
+      <button class="edit-btn"><a href="/members/<%= member.id %>/edit">EDIT</a></button>
+
+  </li>
+    <% end %>
 
 
-</li>
-  <% end %>
-  <button class="home-btn"><a href="/">HOME</a></button>
-</ul>
+    <button class="home-btn"><a href="/">HOME</a></button>
+  </ul>
+
+  </div>
