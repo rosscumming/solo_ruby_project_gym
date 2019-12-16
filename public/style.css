@@ -19,6 +19,7 @@ body {
   width: 100vw;
 }
 
+
 input[type=text] {
 
   padding: 5px 10px;
@@ -54,7 +55,7 @@ a {
 
 a:visited{
 
-  text-decoration: none
+  color: black;
 }
 
 .logo a{
