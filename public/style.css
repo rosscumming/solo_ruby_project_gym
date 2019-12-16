@@ -8,14 +8,29 @@
 body {
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  background: white;
+  color: #000;
 
 }
 
-.nav-list{
+
+.content-container {
+
+  width: 980px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+ul{
   list-style-type: none;
+}
+
+.nav-list {
+
   display: flex;
 
 }
+
 
 a {
   text-decoration: none;
@@ -25,13 +40,12 @@ a {
   color: white;
   height:50px;
   line-height: 50px;
-  margin: 0 0 0 20px;
 
 
 }
 
 .nav-link {
-  margin: 0 20px 0 0;
+  margin: 0 0 0 20px;
 }
 
 .nav-link li{
@@ -44,9 +58,14 @@ display: flex;
 
 .navbar {
   height:50px;
-  background: black;
+  width: 980px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+}
 
+.nav-container{
+  width: 100vw;
+  background: #00171F;
 }

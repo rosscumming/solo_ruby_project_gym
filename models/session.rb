@@ -2,7 +2,7 @@ require_relative( '../db/sql_runner' )
 
 class Session
 
-    attr_accessor  :session_name, :session_type
+    attr_accessor  :session_name, :session_type, :session_time, :session_date
     attr_reader :id
 
     def initialize (options)
