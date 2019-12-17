@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
 * {
   padding: 0;
@@ -231,12 +231,12 @@ a:visited{
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
-  min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
   background-image: linear-gradient(#f5f5f5, #f1f1f1);
   text-decoration: none;
+  animation: ind-btn 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
@@ -273,4 +273,14 @@ a:visited{
 
 .cm-main {
   padding-top: 20px;
+}
+
+
+@keyframes ind-btn {
+  0% {
+            transform: scale(0.3);
+  }
+  100% {
+            transform: scale(1);
+  }
 }

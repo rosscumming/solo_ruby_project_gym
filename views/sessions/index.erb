@@ -5,13 +5,20 @@
   <input type="text" name="session_time" id="session-time" placeholder="Session time" required>
   <input type="text" name="session_date" id="session-date" placeholder="Session date" required>
   <br>
-  <input class="submit-btn" type="submit" value="SUBMIT">
+  <input class="submit-btn" type="submit" value="ADD SESSION">
 </form>
 <div class="ses-wrap">
   <h2> Current sessions </h2>
 </div>
 
 <table>
+
+  <tr>
+    <th>Session name</th>
+    <th>Type</th>
+    <th>Time</th>
+    <th>Date</th>
+  </tr>
 
   <% for session in @sessions %>
 
