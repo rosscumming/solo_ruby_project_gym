@@ -8,25 +8,23 @@
   <input class="submit-btn" type="submit" value="SUBMIT">
 </form>
 <div class="ses-wrap">
-<h2> Current sessions </h2>
+  <h2> Current sessions </h2>
 </div>
-<ul>
-  <% for session in @sessions %>
-  <li>
-  <div class="button-wrap">
-  <%= session.session_name.capitalize%>
-  <br>
-  <%= session.session_type.capitalize%>
-  <br>
-  <%= session.session_time %>
-  <br>
-  <%= session.session_date %>
-  <br>
-  </div>
 
-  <button class="details-btn"><a href="/sessions/<%=session.id%>">DETAILS</button>
-    <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button>
-  </li>
-  <% end %>
+<table>
+
+  <% for session in @sessions %>
+
+  <tr>
+    <td>  <%= session.session_name.capitalize%></td>
+    <td><%= session.session_type.capitalize%></td>
+    <td> <%= session.session_time %></td>
+    <td><%= session.session_date %></td>
+    <td>  <button class="details-btn"><a href="/sessions/<%=session.id%>">DETAILS</button>
+      <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button> </td>
+  </tr>
+
+    <% end %>
+  </table>
+
   <button class="home-btn"><a href="/">HOME</a></button>
-</ul>

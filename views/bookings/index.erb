@@ -33,9 +33,9 @@
   </tr>
 
   <% for booking in @bookings %>
-    <% for session in @sessions %>
-    <% if session.id == booking.session_id %>
-      <tr>
+  <% for session in @sessions %>
+  <% if session.id == booking.session_id %>
+  <tr>
     <td>
       <%= session.session_name %>
     </td>
@@ -49,12 +49,12 @@
     <% end %>
 
     <td>
-    <% for member in @members %>
-    <% if member.id == booking.member_id %>
-    <%= member.first_name %> <%= member.last_name %>
+      <% for member in @members %>
+      <% if member.id == booking.member_id %>
+      <%= member.first_name %> <%= member.last_name %>
     </td>
   </tr>
-    <% end %>
+  <% end %>
   <% end %>
   <% end %>
 

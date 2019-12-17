@@ -1,9 +1,17 @@
 <h2> Session Details </h2>
-
-<p>Name: <%= @session.session_name.capitalize %></p>
-<p>Type: <%= @session.session_type.capitalize %></p>
-<p>Time: <%= @session.session_time %></p>
-<p>Date: <%= @session.session_date %></p>
-
+<table>
+  <tr>
+    <td>Name: </td> <td><%= @session.session_name.capitalize %></td>
+  </tr>
+  <tr>
+    <td>Type: </td><td><%= @session.session_type.capitalize %></td>
+  </tr>
+  <tr>
+    <td>Time:</td><td> <%= @session.session_time %></td>
+  </tr>
+  <tr>
+    <td> Date: </td> <td> <%= @session.session_date %> </td>
+  </tr>
+</table>
 <button class="back-btn"><a href="/sessions">BACK</a></button>
 <button class="edit-btn"><a href="/sessions/<%= @session.id %>/edit">EDIT</a></button>

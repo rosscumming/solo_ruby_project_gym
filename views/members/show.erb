@@ -1,13 +1,32 @@
 <h2> Member Details </h2>
 
-<p>First name: <%= @member.first_name.capitalize %></p>
-<p>Last name: <%= @member.last_name.capitalize %></p>
-<p>Gender: <%= @member.gender.capitalize %></p>
-<p>Date of birth: <%= @member.dob %></p>
-<p>Address: <%= @member.address.upcase %></p>
-<p>Post code: <%= @member.post_code.upcase%></p>
-<p>Email address: <%= @member.email %></p>
-<p>Phone number: <%= @member.phone_number %></p>
+<table>
+  <tr>
+    <td>First name:</td><td><%= @member.first_name.capitalize %></td>
+      </tr>
+      <tr>
+    <td>  Last name: </td> <td><%= @member.last_name.capitalize %></td>
+    </tr>
+    <tr>
+    <td>  Gender: </td><td><%= @member.gender.capitalize %></td>
+    </tr>
+    <tr>
+    <td>  Date of birth: </td><td><%= @member.dob %></td>
+    </tr>
+    <tr>
+      <td>Address:</td><td> <%= @member.address.upcase %></td>
+      </tr>
+      <tr>
+    <td>  Post code: </td><td><%= @member.post_code.upcase%></td>
+    </tr>
+    <tr>
+    <td>  Email address:</td><td> <%= @member.email %></td>
+    </tr>
+    <tr>
+      <td>Phone number: </td> <td><%= @member.phone_number %></td>
+      </tr>
+
+</table>
 
 <button class="back-btn"><a href="/members">BACK</a></button>
 <button class="edit-btn"><a href="/members/<%= @member.id %>/edit">EDIT</a></button>

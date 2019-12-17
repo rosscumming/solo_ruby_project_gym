@@ -20,11 +20,12 @@ body {
 }
 
 table, tr, td {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 th {
   text-align: left;
+  padding-right: 5px;
 }
 
 input[type=text] {
@@ -69,11 +70,6 @@ a:visited{
   line-height: 50px;
 }
 
-.button-wrap {
-  width: 18%;
-  display: inline-block;
-  margin-bottom: 5px;
-}
 
 .nav-link {
   margin: 0 0 0 20px;
