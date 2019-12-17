@@ -121,7 +121,7 @@ a:visited{
 
 .home-btn {
   border: none;
-  background: #f45842;
+  background: #f44285;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -133,7 +133,7 @@ a:visited{
 
 .submit-btn{
   border: none;
-  background: #f45842;
+  background: #f44285;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -144,7 +144,23 @@ a:visited{
   color: white;
 }
 
+.delete-btn {
+  border: none;
+  background: #f45842;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+  color:white;
+}
 
+.delete-btn a{
+
+  color: white;
+}
 
 .home-btn a{
 
@@ -236,6 +252,14 @@ a:visited{
   cursor: pointer;
   padding: 3px;
 
+}
+
+.form-inline{
+  display: inline;
+}
+
+.button-cell{
+  width: 200px;
 }
 
 .ses-wrap {

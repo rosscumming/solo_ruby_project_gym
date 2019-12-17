@@ -20,8 +20,14 @@
     <td><%= session.session_type.capitalize%></td>
     <td> <%= session.session_time %></td>
     <td><%= session.session_date %></td>
-    <td>  <button class="details-btn"><a href="/sessions/<%=session.id%>">DETAILS</button>
-      <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button> </td>
+    <td class="button-cell">
+      <button class="details-btn"><a href="/sessions/<%= session.id%>">DETAILS</button>
+      <button class="edit-btn"><a href="/sessions/<%= session.id %>/edit">EDIT</a></button>
+      <form class="form-inline" action="/sessions/<%= session.id %>/delete" method="POST">
+        <button class=" delete-btn" type="submit"><a href="/sessions/<%= session.id %>/delete"></a>DELETE</button>
+      </form>
+    </td>
+
   </tr>
 
     <% end %>
