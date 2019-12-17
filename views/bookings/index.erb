@@ -1,8 +1,26 @@
-<div class="bk-form>">
+<!-- <div class="bk-form>">
 <h2> Make a new booking </h2>
-<form  action="/bookings/" method="POST">
-  <input type="text" name="first_name" id="first-name" placeholder="First name" required>
-  <br>
-  <input class="submit-btn" type="submit" value="SUBMIT">
-</form>
-</div>
+<!-- <form  action="/bookings/" method="POST"> -->
+<!-- <input type="text" name="first_name" id="first-name" placeholder="First name" required>
+<br>
+<input class="submit-btn" type="submit" value="SUBMIT"> -->
+<!-- </form> -->
+<!-- </div> -->
+
+<h2>Book new session</h2>
+
+
+<h2> Sessions booked </h2>
+<ul>
+  <% for booking in @bookings %>
+  <li>
+    <% for session in @sessions %>
+    <%= session.session_name if session.id == booking.session_id %>
+    <% end %> -
+    <% for member in @members %>
+    <%= "#{member.first_name} #{member.last_name}" if member.id == booking.member_id %>
+
+    <% end %>
+  </li>
+  <% end %>
+</ul>

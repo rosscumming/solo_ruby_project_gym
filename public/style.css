@@ -223,6 +223,20 @@ a:visited{
 
 }
 
+.ses-name {
+
+  border: none;
+  background: #5842f4;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px;
+
+}
+
 .ses-wrap {
   padding-top: 20px;
 }
