@@ -26,10 +26,31 @@ class Booking
     @id = results[0]['id'].to_i
   end
 
+  def self.all()
+    sql = "SELECT * FROM bookings"
+    results = SqlRunner.run(sql)
+    return results.map {|booking| Booking.new(booking)}
+  end
+
   def self.delete_all()
     sql = "DELETE FROM bookings"
     SqlRunner.run(sql)
   end
 
+  def member()
+    sql = "SELECT * FROM members
+    WHERE id = $1"
+    values = [@member_id]
+    result = SqlRunner.new(sql, values)
+    return Member.new(result.first)
+  end
+
+  def session()
+    sql = "SELECT * FROM sessions
+    WHERE id = $1"
+    values = [@session_id]
+    result = SqlRunner.new(sql, values)
+    return Session.new(result.first)
+  end
 
 end

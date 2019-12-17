@@ -83,5 +83,14 @@ class Member
     return member
   end
 
+  def member_booked_in_session()
+    sql = "SELECT sessions.* FROM sessions
+    INNER JOIN bookings ON bookings.session_id = sessions.id
+    WHERE member_id = $1"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map{|session| Session.new(session)}
+  end
+
 
 end
