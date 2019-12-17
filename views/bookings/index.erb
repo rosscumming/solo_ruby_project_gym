@@ -2,7 +2,7 @@
 
 <form action="/bookings" method="post">
   <label>
-  Select a member:
+    Select a member:
     <select name="member_id">
       <% for member in @members %>
       <option value="<%= member.id %>"><%=member.first_name%> <%=member.last_name%></option>
@@ -24,19 +24,38 @@
 
 <br>
 <h2> Sessions booked </h2>
-<ul>
+<table>
+  <tr>
+    <th>Session name</th>
+    <th>Time</th>
+    <th>Date</th>
+    <th>Client name</th>
+  </tr>
+
   <% for booking in @bookings %>
-  <li>
     <% for session in @sessions %>
     <% if session.id == booking.session_id %>
-    <%= session.session_name %>
-    <%= session.session_time %>
-    <%= session.session_date %>
+      <tr>
+    <td>
+      <%= session.session_name %>
+    </td>
+    <td>
+      <%= session.session_time %>
+    </td>
+    <td>
+      <%= session.session_date %>
+    </td>
     <%end%>
-    <% end %> -
-    <% for member in @members %>
-    <%= "#{member.first_name} #{member.last_name}" if member.id == booking.member_id %>
     <% end %>
-  </li>
+
+    <td>
+    <% for member in @members %>
+    <% if member.id == booking.member_id %>
+    <%= member.first_name %> <%= member.last_name %>
+    </td>
+  </tr>
+    <% end %>
   <% end %>
-</ul>
+  <% end %>
+
+  <table>

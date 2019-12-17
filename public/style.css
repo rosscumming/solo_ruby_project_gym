@@ -19,6 +19,13 @@ body {
   width: 100vw;
 }
 
+table, tr, td {
+  padding-right: 50px;
+}
+
+th {
+  text-align: left;
+}
 
 input[type=text] {
 
