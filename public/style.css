@@ -323,6 +323,10 @@ margin: 0 auto;
   cursor: pointer;
 }
 
+.fa-github:hover, .fa-instagram:hover, .fa-facebook:hover{
+  color: #f44285;
+}
+
 @keyframes ind-btn {
   0% {
             transform: scale(0.3);
