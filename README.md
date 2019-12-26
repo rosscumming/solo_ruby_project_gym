@@ -42,6 +42,6 @@ To run the app after the previous steps have been completed, type the following 
 ruby app.rb
 ```
 
-Visit [](http://localhost:4567) in your browser to use and view the app.
+Visit http://localhost:4567 in your browser to use and view the app.
 
 To close the local server connection that has been established, simply press CTRL + C in terminal.
