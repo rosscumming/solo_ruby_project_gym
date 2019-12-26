@@ -2,10 +2,10 @@
 
 **Overview:**
 
-<img src="/images/gymland%20homepage.png" width="20%" height="20%" align="left">
-<img src="/images/gymland%20members%20page.png" width="20%" height="20%" align="left">
-<img src="/images/gmyland%20sessions%20page.png" width="20%" height="20%"align="left">
-<img src="/images/gymland%20bookings%20page.png" width="20%" height="20%">
+<img src="https://raw.githubusercontent.com/rosscumming/solo_ruby_project_gym/master/images/gymland%20homepage.png" width="20%" height="20%" align="left">
+<img src="https://raw.githubusercontent.com/rosscumming/solo_ruby_project_gym/master/images/gymland%20members%20page.png" width="20%" height="20%" align="left">
+<img src="https://raw.githubusercontent.com/rosscumming/solo_ruby_project_gym/master/images/gmyland%20sessions%20page.png" width="20%" height="20%"align="left">
+<img src="https://raw.githubusercontent.com/rosscumming/solo_ruby_project_gym/master/images/gymland%20bookings%20page.png" width="20%" height="20%" align="left">
 
 Gymland is a solo project that I created to finish up the ruby module which was taught as part of the 16 week Professional Software Development course by CodeClan. The app utilises Sinatra framework, was structured in MVC pattern and uses OOP principles. Gymland allows the user to create new gym members as well as update current member details. Gym classes can also be created and updated, as well as being deleted. Members can sign up for these classes. All of the entries made are saved to a database.
 
