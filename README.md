@@ -1,5 +1,8 @@
 # Gymland
 
+**Built using**:
+Ruby, PostgreSQL, HTML5, CSS3
+
 **Overview:**
 
 <img src="https://raw.githubusercontent.com/rosscumming/solo_ruby_project_gym/master/images/gymland%20homepage.png" width="20%" height="20%" align="left">
