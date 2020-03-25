@@ -1,7 +1,6 @@
 require_relative( "../models/member.rb" )
 require_relative( "../models/booking.rb" )
 require_relative( "../models/session.rb" )
-require("pry")
 
 Member.delete_all()
 Session.delete_all()
@@ -88,5 +87,4 @@ booking1.save()
 booking2.save()
 booking3.save()
 
-binding.pry
 nil

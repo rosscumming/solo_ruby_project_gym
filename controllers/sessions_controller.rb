@@ -1,8 +1,6 @@
 require( 'sinatra' )
-require( 'sinatra/contrib/all' )
-require ( 'pry')
+require( 'sinatra/contrib/all' ) if development?
 require_relative( '../models/session.rb' )
-also_reload( '../models/*' )
 
 #sessions list
 get '/sessions/?' do

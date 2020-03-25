@@ -1,6 +1,5 @@
 require_relative( '../db/sql_runner' )
 
-require('pry')
 
 class Session
 
@@ -58,8 +57,7 @@ class Session
       WHERE id = $5"
       values = [@session_name, @session_type, @session_time, @session_date, @id]
       SqlRunner.run(sql, values)
-      # binding.pry
-      # nil
+
     end
 
     def delete()
